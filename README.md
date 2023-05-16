@@ -37,5 +37,5 @@ config.vm.box = "bento/centos-stream-9"
    proxy.vm.provision "shell", path: "./config/proxy_conf.sh"
    end
 end
-----------------------------------------------------------------------------------------------------
+
 - Ejecutar comando vagrant up y las máquinas se configurarán automáticamente con los comandos de la carpeta conf que ya viene incluido entre los archivos descargados de github.
