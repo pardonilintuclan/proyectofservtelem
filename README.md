@@ -4,6 +4,7 @@ https://github.com/pardonilintuclan/proyectofservtelem.git
 -  Ejecutamos powershell
 Vagrant init
 -  El vagrantfile debe contener lo siguiente.
+----------------------------------------------------------------------------------------------------
 Vagrant.configure("2") do |config|
 config.vm.boot_timeout = 600
  if Vagrant.has_plugin? "vagrant-vbguest"
@@ -36,4 +37,5 @@ config.vm.box = "bento/centos-stream-9"
    proxy.vm.provision "shell", path: "./config/proxy_conf.sh"
    end
 end
+----------------------------------------------------------------------------------------------------
 - Ejecutar comando vagrant up y las máquinas se configurarán automáticamente con los comandos de la carpeta conf que ya viene incluido entre los archivos descargados de github.
